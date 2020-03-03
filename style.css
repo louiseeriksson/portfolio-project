@@ -1,37 +1,28 @@
+/* overall styling */
+
 * {
-  font-family: 'Montserrat'
+font-family: 'Montserrat'
 }
 
 
 body {
-  margin: 0;
+margin: 0;
 }
+
+
+
+/* header styling */
 
 header {
 background-image: url(/Users/louise/Desktop/projects/portfolio-project/assets/cactuses.jpeg);
 background-repeat: no-repeat; 
 background-size: cover;
-padding: 40px 36px 0 41px;
+padding: 40px 36px 0 36px;
 display: flex;
 flex-direction: column;
 align-items: flex-end;
 justify-content: space-between;
 border-bottom: 2px solid white;
-}
-
-p {
-  font-family: 'roboto';
-}
-
-h1 {
-  font-size: 40px;
-  font-weight: bolder;
-  margin: 0
-}
-
-h2 {
-  font-weight: bolder;
-  margin-top: 10px;
 }
 
 .icons {
@@ -50,9 +41,9 @@ h2 {
 }
 
 .icon img {
-  height: 20px;
-  width: 20px;
-  padding: 10px;
+  height: 15px;
+  width: 15px;
+  padding: 8px;
 }
 
 .header-intro {
@@ -67,9 +58,137 @@ border-radius: 50%;
 margin-bottom: -30px;
 }
 
-.portfolio-section {
-  padding: 58px 36px 56px 56px;
+p {
+font-family: 'roboto';
+font-size: 17px;
 }
+
+h1 {
+font-size: 40px;
+font-weight: bolder;
+margin: 0
+}
+
+h2 {
+font-weight: bolder;
+margin-top: 10px;
+}
+
+
+/* portfolio information styling  */
+
+h3 {
+  font-size: 16px;
+  font-weight: bolder;
+  color: white;
+}
+
+.bold-color {
+  background-color: red;
+  font-size: 22px;
+  padding: 3px 10px 3px 10px;
+}
+
+h4 {
+  font-size: 17px;
+}
+
+.tech-info {
+  display: flex;
+  text-align: center;
+}
+
+.portfolio-section {
+padding: 58px 36px 56px 36px;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+
+.bold-text {
+  color: red;
+}
+
+.featured-projects {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0 40px 0;
+}
+
+.featured-projects img {
+width: 300px;
+height: 180px;
+opacity: 75%;
+}
+
+.app-text-container {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+
+.languages-container {
+  display: flex;
+
+}
+
+.lang {
+  font-size: 12px;
+  background-color: pink;
+  padding: 2px 10px 2px 10px;
+  margin-right: 5px;
+}
+
+.my-thoughts-img {
+  width: 300px;
+  height: 205px;
+  padding-top: 20px;
+}
+
+.more-thoughts-container {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+
+.skills {
+  display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+.for-more {
+  display: flex;
+  flex-direction: column
+}
+
+.for-more-icons {
+display: flex;
+}
+
+.icon-red {
+border: 2px solid red;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 5px
+}
+
+.icon-red img {
+  height: 30px;
+  width: 30px;
+  padding: 20px;
+}
+
+
+/* different backgrounds  */
 
 .beige {
   background-color: #f5eee6;
@@ -83,13 +202,50 @@ margin-bottom: -30px;
   background-color: #e6a4b4;
 }
 
+
+/* footer  */
+
 footer {
   background-color: rgb(131, 179, 131);
+  padding: 40px 36px 40px 36px;
+display: flex;
+flex-direction: column;
+    align-items: center;
 }
+
+footer h3 {
+  font-size: 21px;
+}
+
+footer p {
+  color: white;
+  margin: 5px
+}
+
+
+/* media queries  */
 
 @media (min-width: 700px) {
   header {
-    padding: 100px 100px 0 100px
+    padding: 100px 200px 0 200px
+  }
+
+  .icon {
+    margin-left: 15px;
+  }
+
+  .icon img {
+    height: 25px;
+    width: 25px;
+    padding: 12px;
+  }
+
+  .portfolio-section {
+    padding: 58px 200px 58px 200px;
+  }
+
+  .icon-red {
+    margin: 20px 
   }
 }
 
@@ -101,4 +257,3 @@ footer {
 }
 
 
-/* font-family: 'Roboto', ; */
