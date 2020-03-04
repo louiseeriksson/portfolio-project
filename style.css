@@ -23,6 +23,7 @@ flex-direction: column;
 align-items: flex-end;
 justify-content: space-between;
 border-bottom: 2px solid white;
+color: white;
 }
 
 .icons {
@@ -78,7 +79,7 @@ margin-top: 10px;
 /* portfolio information styling  */
 
 h3 {
-  font-size: 16px;
+  font-size: 19px;
   font-weight: bolder;
   color: white;
 }
@@ -87,6 +88,11 @@ h3 {
   background-color: red;
   font-size: 22px;
   padding: 3px 10px 3px 10px;
+}
+
+.smaller-bold-text {
+  font-size: 17px;
+  color: red;
 }
 
 h4 {
@@ -120,7 +126,27 @@ flex-direction: column;
   padding: 5px 0 40px 0;
 }
 
-.featured-projects img {
+.project-link {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+
+
+.featured-projects .project-wrapper {
+  position: relative;
+}
+
+.featured-projects .project-wrapper h3 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+  transform: translate(-50%, -50%);
+}
+
+.featured-projects .project-wrapper img {
 width: 300px;
 height: 180px;
 opacity: 75%;
@@ -134,6 +160,7 @@ opacity: 75%;
 
 .languages-container {
   display: flex;
+  margin-bottom: 10px;
 
 }
 
@@ -142,6 +169,7 @@ opacity: 75%;
   background-color: pink;
   padding: 2px 10px 2px 10px;
   margin-right: 5px;
+  color: black;
 }
 
 .my-thoughts-img {
@@ -156,11 +184,27 @@ opacity: 75%;
   flex-wrap: wrap;
 }
 
-.skills {
+.skills-wrapper {
   display: flex;
-    justify-content: left;
-    flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
 }
+
+
+.skills {
+  flex-grow: 1;
+  flex-basis: 50%;
+  max-width: 200px;
+  display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skills p {
+  margin: 5px;
+}
+
 
 .for-more {
   display: flex;
@@ -169,22 +213,32 @@ opacity: 75%;
 
 .for-more-icons {
 display: flex;
+width: 300px;
+    padding-top: 40px;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .icon-red {
-border: 2px solid red;
-  border-radius: 50%;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-content: center;
-  margin: 5px
+  margin: 5px;
+  text-decoration: none;
+  display: flex;
+    flex-wrap: wrap;
+    width: 60px;
+    height: 60px;
+    
 }
 
 .icon-red img {
   height: 30px;
   width: 30px;
-  padding: 20px;
+  padding: 10px;
+  border: 2px solid red;
+  border-radius: 50%;
 }
 
 
@@ -195,7 +249,7 @@ border: 2px solid red;
 }
 
 .light-pink {
-  background-color: #f3d7ca;
+  background-color: #ece1dc;
 }
 
 .pink {
@@ -254,6 +308,31 @@ footer p {
     width: 260px;
     height: 260px;
   }
+
+  .skills {
+    flex-basis: calc(100% / 4);
+  }
+
+.for-more-icons {
+  width: 700px;
+  padding: 50px 0 50px 0;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+  .smaller-bold-text {
+    font-size: 20px;
+  }
+
+  .icon-red img {
+    height: 40px;
+    width: 40px;
+    padding: 25px;
+    border: 2px solid red;
+    border-radius: 50%;
+  }
+
+
 }
 
 
