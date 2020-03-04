@@ -240,15 +240,22 @@ width: 300px;
     height: 60px;
     
 }
-
-.icon-red img {
-  height: 30px;
-  width: 30px;
+.icon-red div {
   padding: 10px;
   border: 2px solid red;
   border-radius: 50%;
 }
 
+.icon-red img {
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.icon-red p {
+  font-size: 12px;
+}
 
 /* different backgrounds  */
 
@@ -334,6 +341,7 @@ footer p {
 
 .for-more-icons {
   width: 700px;
+  margin-top: 15px;
   padding: 50px 0 50px 0;
     justify-content: space-evenly;
     align-items: center;
@@ -343,12 +351,15 @@ footer p {
     font-size: 20px;
   }
 
+
   .icon-red img {
-    height: 40px;
-    width: 40px;
-    padding: 25px;
-    border: 2px solid red;
-    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    padding: 20px;
+  }
+
+  .icon-red p {
+    font-size: 20px;
   }
 
 
