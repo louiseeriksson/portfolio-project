@@ -22,6 +22,7 @@ align-items: flex-end;
 justify-content: space-between;
 border-bottom: 2px solid white;
 color: white;
+text-shadow: 1px 1px 4px black;
 }
 
 .icons {
@@ -31,6 +32,7 @@ color: white;
 .icon {
   border: 2px solid white;
   border-radius: 50%;
+  box-shadow: 1px 1px 4px black;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -83,7 +85,7 @@ h3 {
 }
 
 .bold-color {
-  background-color: red;
+  background-color: #b93f5d;
   font-size: 22px;
   padding: 3px 10px 3px 10px;
 }
@@ -91,7 +93,7 @@ h3 {
 .smaller-bold-text {
   font-family: 'Roboto';
   font-size: 17px;
-  color: red;
+  color: #b93f5d;
 }
 
 h4 {
@@ -114,7 +116,7 @@ flex-direction: column;
 
 
 .bold-text {
-  color: red;
+  color: #b93f5d;
 }
 
 
@@ -174,6 +176,11 @@ margin-bottom: 10px;
 
 
 /* articles and my thoughts  */
+
+.thoughts-wrapper {
+  display: flex;
+  flex-direction: column;
+  }
 
 .article-link {
 font-family: 'Roboto';
@@ -258,7 +265,7 @@ height: 60px;
 
 .icon-red div {
 padding: 10px;
-border: 2px solid red;
+border: 2px solid #b93f5d;
 border-radius: 50%;
 }
 
@@ -271,6 +278,7 @@ box-sizing: border-box;
 
 .icon-red p {
 font-size: 12px;
+color: #b93f5d;
 }
 
 /* different backgrounds  */
@@ -289,7 +297,7 @@ background-color: #e6a4b4;
 
 footer {
 background-color: rgb(131, 179, 131);
-padding: 40px 36px 40px 36px;
+padding: 40px 36px 60px 36px;
 display: flex;
 flex-direction: column;
   align-items: center;
@@ -307,7 +315,7 @@ margin: 5px
 
 /* media queries  */
 
-@media (min-width: 700px) {
+@media (min-width: 600px) {
 header {
 padding: 100px 200px 0 200px
 }
@@ -325,6 +333,11 @@ padding: 12px;
 .portfolio-section {
 padding: 58px 200px 58px 200px;
 }
+
+.thoughts-wrapper {
+  align-items: baseline;
+  }
+
 
 .icon-red {
 margin: 20px 
@@ -360,8 +373,9 @@ align-self: baseline;
 }
 
 .thoughts-wrapper {
-display: flex;
-}
+  display: flex;
+  flex-direction: unset;
+  }
 
 .my-thoughts {
 padding: 5px 20px 40px 20px;
